@@ -7,4 +7,6 @@ target 'DMWCDB' do
 
   # Pods for DMWCDB
   pod 'WCDB'
+  pod 'AFNetworking', '~> 3.1.0'
+  pod 'YYModel', '~> 1.0.4'
 end

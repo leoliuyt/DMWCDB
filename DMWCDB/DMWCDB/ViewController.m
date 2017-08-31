@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
@@ -26,4 +25,18 @@
 }
 
 
+- (void)loadData
+{
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:file];
+    NSError *error;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+    if (error) {
+        NSLog(@"%@",error.localizedDescription);
+        return;
+    }
+    
+    NSLog(@"%@",dic);
+    
+}
 @end

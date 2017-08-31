@@ -1,0 +1,25 @@
+//
+//  DMWCDBPrefix.pch
+//  DMWCDB
+//
+//  Created by lbq on 2017/8/31.
+//  Copyright © 2017年 lbq. All rights reserved.
+//
+
+#ifndef DMWCDBPrefix_pch
+#define DMWCDBPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
+#define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#endif
+
+#endif /* DMWCDBPrefix_pch */

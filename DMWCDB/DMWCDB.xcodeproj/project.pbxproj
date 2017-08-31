@@ -14,6 +14,8 @@
 		6B3D13F01F57A9BC0029E58D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D13EE1F57A9BC0029E58D /* Main.storyboard */; };
 		6B3D13F21F57A9BC0029E58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D13F11F57A9BC0029E58D /* Assets.xcassets */; };
 		6B3D13F51F57A9BC0029E58D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D13F31F57A9BC0029E58D /* LaunchScreen.storyboard */; };
+		6B3D142E1F57CB090029E58D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D142D1F57CB090029E58D /* data.json */; };
+		6B3D14311F57D95C0029E58D /* DMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14301F57D95C0029E58D /* DMUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		6B3D13F11F57A9BC0029E58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B3D13F41F57A9BC0029E58D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B3D13F61F57A9BC0029E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3D14291F57BC8C0029E58D /* DMWCDBPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMWCDBPrefix.pch; sourceTree = "<group>"; };
+		6B3D142D1F57CB090029E58D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		6B3D142F1F57D95C0029E58D /* DMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUser.h; sourceTree = "<group>"; };
+		6B3D14301F57D95C0029E58D /* DMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUser.m; sourceTree = "<group>"; };
 		92F5E9946E7CB480C0C7BA23 /* Pods-DMWCDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMWCDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMWCDB/Pods-DMWCDB.release.xcconfig"; sourceTree = "<group>"; };
 		A5D4961C367F8F58BC3D0FF6 /* libPods-DMWCDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMWCDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +75,9 @@
 				6B3D13E91F57A9BC0029E58D /* AppDelegate.m */,
 				6B3D13EB1F57A9BC0029E58D /* ViewController.h */,
 				6B3D13EC1F57A9BC0029E58D /* ViewController.m */,
+				6B3D142F1F57D95C0029E58D /* DMUser.h */,
+				6B3D14301F57D95C0029E58D /* DMUser.m */,
+				6B3D142D1F57CB090029E58D /* data.json */,
 				6B3D13EE1F57A9BC0029E58D /* Main.storyboard */,
 				6B3D13F11F57A9BC0029E58D /* Assets.xcassets */,
 				6B3D13F31F57A9BC0029E58D /* LaunchScreen.storyboard */,
@@ -82,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				6B3D13E61F57A9BC0029E58D /* main.m */,
+				6B3D14291F57BC8C0029E58D /* DMWCDBPrefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B3D13F51F57A9BC0029E58D /* LaunchScreen.storyboard in Resources */,
+				6B3D142E1F57CB090029E58D /* data.json in Resources */,
 				6B3D13F21F57A9BC0029E58D /* Assets.xcassets in Resources */,
 				6B3D13F01F57A9BC0029E58D /* Main.storyboard in Resources */,
 			);
@@ -228,6 +239,7 @@
 				6B3D13ED1F57A9BC0029E58D /* ViewController.m in Sources */,
 				6B3D13EA1F57A9BC0029E58D /* AppDelegate.m in Sources */,
 				6B3D13E71F57A9BC0029E58D /* main.m in Sources */,
+				6B3D14311F57D95C0029E58D /* DMUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +362,7 @@
 			baseConfigurationReference = 5E9AEB372A448B0525AED58E /* Pods-DMWCDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = DMWCDB/DMWCDBPrefix.pch;
 				INFOPLIST_FILE = DMWCDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiqi.DMWCDB;
@@ -362,6 +375,7 @@
 			baseConfigurationReference = 92F5E9946E7CB480C0C7BA23 /* Pods-DMWCDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = DMWCDB/DMWCDBPrefix.pch;
 				INFOPLIST_FILE = DMWCDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiqi.DMWCDB;
@@ -388,6 +402,7 @@
 				6B3D13FB1F57A9BC0029E58D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
