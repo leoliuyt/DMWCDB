@@ -15,7 +15,8 @@
 		6B3D13F21F57A9BC0029E58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D13F11F57A9BC0029E58D /* Assets.xcassets */; };
 		6B3D13F51F57A9BC0029E58D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D13F31F57A9BC0029E58D /* LaunchScreen.storyboard */; };
 		6B3D142E1F57CB090029E58D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D142D1F57CB090029E58D /* data.json */; };
-		6B3D14311F57D95C0029E58D /* DMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14301F57D95C0029E58D /* DMUser.m */; };
+		6B3D14311F57D95C0029E58D /* DMUser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14301F57D95C0029E58D /* DMUser.mm */; };
+		6B3D14351F580DB90029E58D /* DMDBService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14341F580DB90029E58D /* DMDBService.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,10 @@
 		6B3D14291F57BC8C0029E58D /* DMWCDBPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMWCDBPrefix.pch; sourceTree = "<group>"; };
 		6B3D142D1F57CB090029E58D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		6B3D142F1F57D95C0029E58D /* DMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUser.h; sourceTree = "<group>"; };
-		6B3D14301F57D95C0029E58D /* DMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUser.m; sourceTree = "<group>"; };
+		6B3D14301F57D95C0029E58D /* DMUser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DMUser.mm; sourceTree = "<group>"; };
+		6B3D14321F5809A70029E58D /* DMUser+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMUser+WCTTableCoding.h"; sourceTree = "<group>"; };
+		6B3D14331F580DB90029E58D /* DMDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDBService.h; sourceTree = "<group>"; };
+		6B3D14341F580DB90029E58D /* DMDBService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DMDBService.mm; sourceTree = "<group>"; };
 		92F5E9946E7CB480C0C7BA23 /* Pods-DMWCDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMWCDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMWCDB/Pods-DMWCDB.release.xcconfig"; sourceTree = "<group>"; };
 		A5D4961C367F8F58BC3D0FF6 /* libPods-DMWCDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMWCDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +80,10 @@
 				6B3D13EB1F57A9BC0029E58D /* ViewController.h */,
 				6B3D13EC1F57A9BC0029E58D /* ViewController.m */,
 				6B3D142F1F57D95C0029E58D /* DMUser.h */,
-				6B3D14301F57D95C0029E58D /* DMUser.m */,
+				6B3D14301F57D95C0029E58D /* DMUser.mm */,
+				6B3D14331F580DB90029E58D /* DMDBService.h */,
+				6B3D14341F580DB90029E58D /* DMDBService.mm */,
+				6B3D14321F5809A70029E58D /* DMUser+WCTTableCoding.h */,
 				6B3D142D1F57CB090029E58D /* data.json */,
 				6B3D13EE1F57A9BC0029E58D /* Main.storyboard */,
 				6B3D13F11F57A9BC0029E58D /* Assets.xcassets */,
@@ -236,10 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3D14351F580DB90029E58D /* DMDBService.mm in Sources */,
 				6B3D13ED1F57A9BC0029E58D /* ViewController.m in Sources */,
 				6B3D13EA1F57A9BC0029E58D /* AppDelegate.m in Sources */,
 				6B3D13E71F57A9BC0029E58D /* main.m in Sources */,
-				6B3D14311F57D95C0029E58D /* DMUser.m in Sources */,
+				6B3D14311F57D95C0029E58D /* DMUser.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

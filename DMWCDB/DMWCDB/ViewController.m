@@ -7,15 +7,21 @@
 //
 
 #import "ViewController.h"
+#import "DMUser.h"
+#import <YYModel.h>
+#import "DMDBService.h"
 
 @interface ViewController ()
 
+@property (nonatomic, copy) NSArray<DMUser *> *users;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self loadData];
 }
 
 
@@ -23,7 +29,37 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)createAction:(id)sender {
+    [DMDBService shared];
+}
+- (IBAction)addAction:(id)sender {
+    [[DMDBService shared] insertUsers:self.users];
+}
+- (IBAction)delete:(id)sender {
+    BOOL opSuccess = [[DMDBService shared] deleteUserId:@"59883af84df8e432659e3954"];
+    if (opSuccess) {
+        NSLog(@"删除操作成功");
+    } else {
+        NSLog(@"删除操作失败");
+    }
+}
 
+- (IBAction)updateAction:(id)sender {
+    DMUser *user = [[DMUser alloc] init];
+    user.userid = @"59883af84df8e432659e3954";
+    user.icon = @"aaaaa";
+   BOOL opSuccess = [[DMDBService shared] updateUser:user];
+    if (opSuccess) {
+        NSLog(@"更新操作成功");
+    } else {
+        NSLog(@"更新操作失败");
+    }
+}
+
+- (IBAction)selectAction:(id)sender {
+    NSArray *arr = [[DMDBService shared] fetchUsers];
+    NSLog(@"%@",arr);
+}
 
 - (void)loadData
 {
@@ -36,7 +72,13 @@
         return;
     }
     
-    NSLog(@"%@",dic);
     
+    NSArray<NSDictionary *> *arr = dic[@"users"];
+    NSMutableArray *tmp = [NSMutableArray arrayWithCapacity:arr.count];
+    [arr enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        DMUser *user = [DMUser yy_modelWithDictionary:obj];
+        [tmp addObject:user];
+    }];
+    self.users = [tmp copy];
 }
 @end
