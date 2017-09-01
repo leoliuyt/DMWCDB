@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class DMUser;
+@class DMUser,DMProduct,DMVendor;
 
 @interface DMDBService : NSObject
 
@@ -16,5 +16,8 @@
 - (BOOL)updateUser:(DMUser *)user;
 - (BOOL)deleteUserId:(NSString *)userId;
 - (void)insertUsers:(NSArray <DMUser *>*)users;
+- (void)insertVendors:(NSArray<DMVendor *>*)vendors;
+- (void)insertProducts:(NSArray<DMProduct *>*)products;
+
 - (NSArray<DMUser *> *)fetchUsers;
 @end

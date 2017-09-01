@@ -1,0 +1,56 @@
+[
+  {
+    "vend_city" : "Bear Town",
+    "vend_name" : "Bears R Us",
+    "vend_zip" : "44444",
+    "vend_country" : "USA",
+    "vend_address" : "123 Main Street",
+    "vend_id" : "BRS01",
+    "vend_state" : "MI"
+  },
+  {
+    "vend_city" : "Anytown",
+    "vend_name" : "Bear Emporium",
+    "vend_zip" : "44333",
+    "vend_country" : "USA",
+    "vend_address" : "500 Park Street",
+    "vend_id" : "BRE02",
+    "vend_state" : "OH"
+  },
+  {
+    "vend_city" : "Dollsville",
+    "vend_name" : "Doll House Inc.",
+    "vend_zip" : "99999",
+    "vend_country" : "USA",
+    "vend_address" : "555 High Street",
+    "vend_id" : "DLL01",
+    "vend_state" : "CA"
+  },
+  {
+    "vend_city" : "New York",
+    "vend_name" : "Furball Inc.",
+    "vend_zip" : "11111",
+    "vend_country" : "USA",
+    "vend_address" : "1000 5th Avenue",
+    "vend_id" : "FRB01",
+    "vend_state" : "NY"
+  },
+  {
+    "vend_city" : "London",
+    "vend_name" : "Fun and Games",
+    "vend_zip" : "N16 6PS",
+    "vend_country" : "England",
+    "vend_address" : "42 Galaxy Road",
+    "vend_id" : "FNG01",
+    "vend_state" : "<null>"
+  },
+  {
+    "vend_city" : "Paris",
+    "vend_name" : "Jouets et ours",
+    "vend_zip" : "45678",
+    "vend_country" : "France",
+    "vend_address" : "1 Rue Amusement",
+    "vend_id" : "JTS01",
+    "vend_state" : "<null>"
+  }
+]

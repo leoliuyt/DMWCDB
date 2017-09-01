@@ -17,6 +17,11 @@
 		6B3D142E1F57CB090029E58D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D142D1F57CB090029E58D /* data.json */; };
 		6B3D14311F57D95C0029E58D /* DMUser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14301F57D95C0029E58D /* DMUser.mm */; };
 		6B3D14351F580DB90029E58D /* DMDBService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14341F580DB90029E58D /* DMDBService.mm */; };
+		6B3D143A1F5945BD0029E58D /* Customers.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D14371F5945BD0029E58D /* Customers.json */; };
+		6B3D143B1F5945BD0029E58D /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D14381F5945BD0029E58D /* Products.json */; };
+		6B3D143C1F5945BD0029E58D /* Vendors.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D14391F5945BD0029E58D /* Vendors.json */; };
+		6B3D143F1F59460E0029E58D /* DMProduct.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D143E1F59460E0029E58D /* DMProduct.mm */; };
+		6B3D14431F59475D0029E58D /* DMVendor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D14421F59475D0029E58D /* DMVendor.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,15 @@
 		6B3D14321F5809A70029E58D /* DMUser+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMUser+WCTTableCoding.h"; sourceTree = "<group>"; };
 		6B3D14331F580DB90029E58D /* DMDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDBService.h; sourceTree = "<group>"; };
 		6B3D14341F580DB90029E58D /* DMDBService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DMDBService.mm; sourceTree = "<group>"; };
+		6B3D14371F5945BD0029E58D /* Customers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Customers.json; sourceTree = "<group>"; };
+		6B3D14381F5945BD0029E58D /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
+		6B3D14391F5945BD0029E58D /* Vendors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vendors.json; sourceTree = "<group>"; };
+		6B3D143D1F59460E0029E58D /* DMProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMProduct.h; sourceTree = "<group>"; };
+		6B3D143E1F59460E0029E58D /* DMProduct.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DMProduct.mm; sourceTree = "<group>"; };
+		6B3D14401F5946200029E58D /* DMProduct+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMProduct+WCTTableCoding.h"; sourceTree = "<group>"; };
+		6B3D14411F59475D0029E58D /* DMVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMVendor.h; sourceTree = "<group>"; };
+		6B3D14421F59475D0029E58D /* DMVendor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DMVendor.mm; sourceTree = "<group>"; };
+		6B3D14441F5948290029E58D /* DMVendor+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMVendor+WCTTableCoding.h"; sourceTree = "<group>"; };
 		92F5E9946E7CB480C0C7BA23 /* Pods-DMWCDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMWCDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMWCDB/Pods-DMWCDB.release.xcconfig"; sourceTree = "<group>"; };
 		A5D4961C367F8F58BC3D0FF6 /* libPods-DMWCDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMWCDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,12 +93,21 @@
 				6B3D13E91F57A9BC0029E58D /* AppDelegate.m */,
 				6B3D13EB1F57A9BC0029E58D /* ViewController.h */,
 				6B3D13EC1F57A9BC0029E58D /* ViewController.m */,
+				6B3D143D1F59460E0029E58D /* DMProduct.h */,
+				6B3D143E1F59460E0029E58D /* DMProduct.mm */,
+				6B3D14401F5946200029E58D /* DMProduct+WCTTableCoding.h */,
+				6B3D14411F59475D0029E58D /* DMVendor.h */,
+				6B3D14421F59475D0029E58D /* DMVendor.mm */,
+				6B3D14441F5948290029E58D /* DMVendor+WCTTableCoding.h */,
 				6B3D142F1F57D95C0029E58D /* DMUser.h */,
 				6B3D14301F57D95C0029E58D /* DMUser.mm */,
 				6B3D14331F580DB90029E58D /* DMDBService.h */,
 				6B3D14341F580DB90029E58D /* DMDBService.mm */,
 				6B3D14321F5809A70029E58D /* DMUser+WCTTableCoding.h */,
 				6B3D142D1F57CB090029E58D /* data.json */,
+				6B3D14371F5945BD0029E58D /* Customers.json */,
+				6B3D14381F5945BD0029E58D /* Products.json */,
+				6B3D14391F5945BD0029E58D /* Vendors.json */,
 				6B3D13EE1F57A9BC0029E58D /* Main.storyboard */,
 				6B3D13F11F57A9BC0029E58D /* Assets.xcassets */,
 				6B3D13F31F57A9BC0029E58D /* LaunchScreen.storyboard */,
@@ -182,9 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B3D13F51F57A9BC0029E58D /* LaunchScreen.storyboard in Resources */,
+				6B3D143A1F5945BD0029E58D /* Customers.json in Resources */,
 				6B3D142E1F57CB090029E58D /* data.json in Resources */,
 				6B3D13F21F57A9BC0029E58D /* Assets.xcassets in Resources */,
 				6B3D13F01F57A9BC0029E58D /* Main.storyboard in Resources */,
+				6B3D143C1F5945BD0029E58D /* Vendors.json in Resources */,
+				6B3D143B1F5945BD0029E58D /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3D143F1F59460E0029E58D /* DMProduct.mm in Sources */,
 				6B3D14351F580DB90029E58D /* DMDBService.mm in Sources */,
 				6B3D13ED1F57A9BC0029E58D /* ViewController.m in Sources */,
+				6B3D14431F59475D0029E58D /* DMVendor.mm in Sources */,
 				6B3D13EA1F57A9BC0029E58D /* AppDelegate.m in Sources */,
 				6B3D13E71F57A9BC0029E58D /* main.m in Sources */,
 				6B3D14311F57D95C0029E58D /* DMUser.mm in Sources */,
